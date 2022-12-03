@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <center><h2 id="header1">Hello User and Welcome.</h2></center>
+
+   
+<script src="htpps://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+<script>
+ function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+
+function pause1(){
+     var x = document.getElementById("audio1"); 
+     x.pause();
+}
+
+function play1(){
+        var x = document.getElementById("audio1"); 
+        x.play();
+}
+
+</script>
+    <style>
+
+       #header1{
+          color: #fff;
+          font-style: italic;
+
+       }
+      .button3{
+          display: inline-flex;
+          position: relative;
+          top: 446px;
+          right: 15%;
+          height: 50px;
+          padding: 0;
+          background: #009578;
+          border: none;
+          outline: none;
+          border-radius: 5px;
+          overflow: hidden;
+          font-family: 'Quicksand', sans-serif;
+          font-size: 16px;
+          font-weight: 500; 
+          cursor: pointer;
+
+}
+     .button2{
+          display: inline-flex;
+          position: relative;
+          top: 446px;
+          right: 6%;
+          height: 50px;
+          padding: 0;
+          background: #009578;
+          border: none;
+          outline: none;
+          border-radius: 5px;
+          overflow: hidden;
+          font-family: 'Quicksand', sans-serif;
+          font-size: 16px;
+          font-weight: 500; 
+          cursor: pointer;
+
+    }
+    .button{
+        display: inline-flex;
+        position: absolute;
+        top: 510px;
+        right: 2%;
+        height: 50px;
+        padding: 0;
+        background: #009578;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        overflow: hidden;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 16px;
+        font-weight: 500; 
+        cursor: pointer;
+
+   }
+   .button1{
+      position: relative;
+      top: 446px;
+      left: 60%;
+      display: inline-flex;
+      height: 50px;
+      padding: 0;
+      background: #009578;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      overflow: hidden;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 16px;
+      font-weight: 500; 
+      cursor: pointer;
+
+     }
+       .button1:hover{
+         background: #008168;
+
+     }
+      .button1:active{
+         background: #006e58;
+     }
+
+      .button:hover{
+         background: #008168;
+
+     }
+     .button:active{
+         background: #006e58;
+     }
+     .button__text1,
+     .button__icon1{
+         display: inline-flex;
+         align-items: center;
+         padding: 0 24px;
+         color: #fff;
+         height: 100%;
+     }
+
+   .button__text,
+   .button__icon{
+       display: inline-flex;
+       align-items: center;
+       padding: 0 24px;
+       color: #fff;
+       height: 100%;
+    }
+     img{
+       width: 20px;
+    }
+
+    body{
+        background-image: url('Background-img2.png');
+    }
+  </style>
+
+<button class="button1" onmouseover="document.body.style.backgroundImage = 'url(Background-img3.png)'" onmouseout="document.body.style.backgroundImage = 'url(Background-img2.png)'">
+<span class="button__text">Mouse Over/Mouse Out</span>
+</button>
+
+ <button class="button" type="button" onclick="play()" value="PLAY" >
+    <span class="button__text">Play</span>
+    <span class="button__icon">
+    <img src="play-button.png">
+    </span>
+    </button>
+
+<button class="button3" type="button" ondblclick="pause1()" type="button">
+    <span class="button__text">Double Click to Pause</span>
+    <span class="button__icon"><img src="pause.png"></img>
+    </span>
+    </button>
+
+<button class="button2" ondblclick="play1()" type="button"  >
+    <span class="button__text">Double Click to Play.</span>
+    <span class="button__icon">
+    <img src="play-button.png">
+    </span>
+    </button>
+
+<audio id="audio1"><source src="Wednesday.mp3.mp3" type="audio/mp3"></audio>
+<audio id="audio" src="JAPFND1_0001.mp3"></audio>
+
+</body>
+</html>
